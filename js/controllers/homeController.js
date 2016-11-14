@@ -25,7 +25,7 @@ angular.module('movieTrailers.controllers')
       __Video.get(title + ' trailer', function(err, response){
         var movieData  = response.data.items[0];
         var videoId = movieData.id.videoId;
-        $scope.videoUrl = $sce.trustAsResourceUrl('http://www.youtube.com/embed/' + videoId + '?autoplay=1');
+        $scope.videoUrl = $sce.trustAsResourceUrl('https://www.youtube.com/embed/' + videoId + '?autoplay=1');
         $('html, body').animate({scrollTop:0}, 'slow');
       });
     }
