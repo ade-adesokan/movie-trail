@@ -1,0 +1,16 @@
+{
+  "name": "movie-trailer",
+  "version": "1.0.0",
+  "description": "An application to display top 20 box office movies and play trailers",
+  "main": "application.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Adewunmi Adesokan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-session": "^1.14.2"
+  }
+}

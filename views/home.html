@@ -1,0 +1,26 @@
+<section>
+  <form class="form-inline" id="input-form">
+    <div class="form-group">
+      <input type="text" class="form-control" id="search" placeholder="search" ng-model="movieTitle" ng-keyup="$event.keyCode == 13 && search(movieTitle)">
+    </div>
+  </form>
+</section>
+<section>
+  <div id="video-container"><iframe width="100%" height="100%" ng-src="{{videoUrl}}" frameborder="0" allowfullscreen></iframe></div>
+</section>
+<section>
+  <table id="movie-list">
+    <tr>
+      <td ng-repeat= "movie in topRatedMovies_1"><img ng-src="{{movie.imageUrl}}" class="img-thumbnail" ng-click="search(movie.title)"></td>
+    </tr>
+    <tr>
+      <td ng-repeat= "movie in topRatedMovies_2"><img ng-src="{{movie.imageUrl}}" class="img-thumbnail" ng-click="search(movie.title)"></td>
+    </tr>
+    <tr>
+      <td ng-repeat= "movie in topRatedMovies_3"><img ng-src="{{movie.imageUrl}}" class="img-thumbnail" ng-click="search(movie.title)"></td>
+    </tr>
+    <tr>
+      <td ng-repeat= "movie in topRatedMovies_4"><img ng-src="{{movie.imageUrl}}" class="img-thumbnail" ng-click="search(movie.title)"></td>
+    </tr>
+  </table> 
+</section>

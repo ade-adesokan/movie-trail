@@ -1,0 +1,37 @@
+body {
+  padding: 1em;
+  background-color: #040404;
+}
+
+#search {
+  height: 1.5em;
+  border-radius: 10px;
+  width: 20em;
+}
+
+#input-form {
+  float: right;
+  display: block;
+}
+
+#video-container {
+  border: 1px solid black;
+  width: 50%;
+  height: 50%;
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: 25%;
+}
+
+#movie-list {
+  top: 65%;
+  position: absolute;
+  width: 80%;
+  left: 10%;
+}
+
+table td {
+  border: 1px solid black;
+}
+
